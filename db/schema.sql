@@ -1,0 +1,10 @@
+CREATE DATABASE IF NOT EXISTS rider_service_db;
+USE rider_service_db;
+
+CREATE TABLE IF NOT EXISTS rhfd_riders (
+    rider_id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(100) NOT NULL,
+    email VARCHAR(100) NOT NULL,
+    phone VARCHAR(15) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
